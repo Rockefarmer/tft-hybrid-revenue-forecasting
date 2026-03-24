@@ -1,14 +1,11 @@
 experiment_name: finbert_h4
-horizon: 4
-model_type: hybrid_tft
-text_features: finbert
-transcript_feature_file: data/processed/finbert_quarterly_features.csv
-train_start: 2012Q3
-train_end: 2019Q4
-val_start: 2020Q1
-val_end: 2021Q4
-test_start: 2022Q1
-test_end: 2025Q2
-target_column: revenue
-transform_target: log1p
-metrics: [mae, rmse, mape]
+text_source: finbert
+max_encoder_length: 12
+max_prediction_length: 4
+max_epochs: 150
+batch_size: 64
+learning_rate: 0.001
+hidden_size: 64
+attention_heads: 4
+dropout: 0.15
+weight_decay: 1.0e-5
