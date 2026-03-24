@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tft-multihorizon"
+version = "0.1.0"
+description = "TFT baseline and hybrid FinBERT/Llama-3 revenue forecasting scaffold"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  {name = "Repo Author"}
+]
+dependencies = []
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
